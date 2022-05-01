@@ -1,0 +1,9 @@
+<div class="row mt-3">
+	<div class="col-6 offset-3" *ngIf="isApiLoaded">
+        <input class="form-control"
+            ngx-google-places-autocomplete
+            [options]="options"
+            (onAddressChange)="handleAddressChange($event)"
+        />
+	</div>
+</div>
